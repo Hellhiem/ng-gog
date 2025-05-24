@@ -1,0 +1,25 @@
+@use "../../../styles" as *;
+
+.cart-indicator {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border: 0;
+  background-color: transparent;
+}
+
+.cart-indicator:hover {
+  cursor: pointer;
+}
+
+.cart-indicator-active {
+  background-color: white;
+}
+
+.cart-items {
+  font-size: $p2;
+  color: #404040;
+}

@@ -1,0 +1,8 @@
+<section class="home-container">
+ <app-game-of-the-week/>
+  <div class="game-list">
+    @for(game of gameItems; track game.id) {
+      <app-game-item [gameItem]="game"/>
+    }
+  </div>
+</section>

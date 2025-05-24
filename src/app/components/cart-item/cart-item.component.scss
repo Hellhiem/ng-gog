@@ -1,0 +1,48 @@
+@use "../../../styles" as *;
+
+.cart-item {
+  display: flex;
+  padding: 2px 4px;
+  gap: 8px;
+  align-items: center;
+}
+
+.item-title {
+  font-size: $p2;
+  color: #212121;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.item-remove {
+  font-size: $c1;
+  margin: 0;
+  text-decoration: underline;
+  color:#212121;
+  background-color: transparent;
+  border: 0;
+  text-align: start;
+  padding: 0;
+}
+
+.item-remove:hover {
+  cursor: pointer;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.cart-item-price {
+  font-size: $c1;
+  color:#404040;
+  font-weight: bold;
+}

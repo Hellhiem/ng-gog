@@ -1,0 +1,24 @@
+@use '../../../styles' as *;
+
+.price-container {
+  height: 22px;
+  padding:0 4px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #979797;
+  background-color: transparent;
+}
+
+.price-container:hover {
+  cursor: pointer;
+}
+
+.price-container-owned {
+  opacity: 0.5;
+}
+
+.price {
+  color: #404040;
+  font-size: $c1;
+  font-weight: bold;
+}

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Font configs
+$p1: 15px;
+$p2: 14px;
+$c1: 13px;
+$c2: 12px;
+$base-line-height: 17px;
+
+// Colors
+$discount-color: #00905E;
+$primary-color: #7A3DC6;
+
+// Sizes
+$page-max-width: 1280px;
+$page-cut: 108px;
+
+// General styles
+body {
+  margin:0;
+  background-color: #C2C2C2;
+  font-family: sans-serif;
+}

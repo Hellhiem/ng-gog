@@ -1,0 +1,15 @@
+@use '../../../styles' as *;
+
+.discount-container {
+  background-color: $discount-color;
+  height: 22px;
+  padding:0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.discount-label {
+  font-size: $c1;
+  color: #F2F2F2;
+
+}

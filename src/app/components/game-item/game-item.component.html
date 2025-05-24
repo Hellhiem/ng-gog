@@ -1,0 +1,14 @@
+<div class="game-item">
+  <img [ngSrc]="gameItem.imageSource" [alt]="gameItem.title" class="game-item-image" width="196" height="110"/>
+
+  <div class="game-item-content">
+    <p class="game-name">{{gameItem.title | uppercase}}</p>
+
+    <div class="game-price-details">
+      @if(gameItem.discount) {
+        <app-discount-label [discount]="gameItem.discount"/>
+      }
+      <app-price-label [isOwned]="gameItem.owned"  [price]="gameItem.price" (priceClick)="addGame()" [inCart]="isGameInCart"/>
+    </div>
+  </div>
+</div>

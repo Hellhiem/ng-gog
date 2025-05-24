@@ -1,0 +1,7 @@
+@use "../styles" as *;
+
+.app-container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+}
+

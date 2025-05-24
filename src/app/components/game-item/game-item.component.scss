@@ -1,0 +1,30 @@
+@use '../../../styles' as *;
+
+.game-item {
+  width: 196px;
+  background-color: #E0E0E0;
+}
+
+.game-name {
+  font-size: $p2;
+  color: #212121;
+  margin: 0;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 35px;
+}
+
+.game-item-content {
+  padding: 8px;
+}
+
+.game-price-details {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 8px;
+}

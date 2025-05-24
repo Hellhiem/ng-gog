@@ -1,0 +1,9 @@
+<button class="price-container" [class.price-container-owned]="isOwned" (click)="onClick()" [disabled]="inCart">
+  @if(isOwned) {
+    <p class="price">{{ 'home.owned' | translate | uppercase }}</p>
+  } @else if (inCart){
+    <p class="price">{{ 'home.inCart' | translate | uppercase}}</p>
+  } @else {
+    <p class="price">{{ price | currency }}</p>
+  }
+</button>

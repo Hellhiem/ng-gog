@@ -1,0 +1,12 @@
+@use "../../../styles" as *;
+
+.home-container {
+  margin: 0 $page-cut;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}

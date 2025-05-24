@@ -1,0 +1,12 @@
+{
+  "home": {
+    "gameOfTheWeek": "Game of the week",
+    "owned": "Owned",
+    "inCart": "In cart"
+  },
+  "cart": {
+    "cartEmpty": "Your cart is empty",
+    "itemsInCart": "{{number}} Items in cart",
+    "clearCart": "Clear cart"
+  }
+}

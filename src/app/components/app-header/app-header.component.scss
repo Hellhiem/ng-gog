@@ -1,0 +1,23 @@
+@use "../../../styles" as *;
+
+$header-height: 60px;
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  background: linear-gradient(180deg, #FFFFFF 0%, #DEDEDE 50%);
+  padding: 0 $page-cut;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-details {
+  position: absolute;
+  top: $header-height;
+}

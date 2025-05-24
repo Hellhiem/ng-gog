@@ -1,0 +1,12 @@
+<div class="cart-item">
+  <img ngSrc="{{cartItem.imageSource}}" alt="image of {{cartItem.title}}" class="cart-item-image" width="100" height="60"/>
+
+  <div class="cart-item-details">
+    <p class="item-title">{{cartItem.title}}</p>
+    <button class="item-remove" (click)="removeItem()">
+      Remove
+    </button>
+  </div>
+
+  <p class="cart-item-price">{{cartItem.price | currency}}</p>
+</div>

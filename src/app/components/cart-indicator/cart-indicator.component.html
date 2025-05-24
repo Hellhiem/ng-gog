@@ -1,0 +1,4 @@
+<button class="cart-indicator" [class.cart-indicator-active]="isCartExpanded" (click)="onClick()">
+  <img ngSrc="assets/cart-icon.svg" alt="Cart Icon" height="16" width="16"/>
+  <p class="cart-number" class="cart-items">{{cartGameItems.length}}</p>
+</button>
