@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
-import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AppHeaderComponent, TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet, AppHeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
