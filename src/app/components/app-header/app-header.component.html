@@ -1,11 +1,4 @@
 <header class="app-header">
   <img ngSrc="assets/logo.png" alt="GOG Logo" height="37" width="43"/>
-  <div class="cart" [class.cart-expanded]="isCartExpanded">
-    <app-cart-indicator (cartClick)="toggleCart()" [isCartExpanded]="isCartExpanded"/>
-    @if(isCartExpanded){
-      <div class="cart-details">
-        <app-cart />
-      </div>
-    }
-  </div>
+  <app-cart (cartClick)="toggleCart()" [isCartExpanded]="isCartExpanded"/>
 </header>

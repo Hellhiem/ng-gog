@@ -5,6 +5,12 @@
   padding: 2px 4px;
   gap: 8px;
   align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-left-container {
+  display: flex;
+  gap: 8px;
 }
 
 .item-title {
