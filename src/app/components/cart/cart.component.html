@@ -9,7 +9,7 @@
             <p class="item-details-text">{{ 'cart.itemsInCart' | translate:{ number: cartGameItems.length } |uppercase }}</p>
             <p class="item-details-text">{{ totalPrice | currency }}</p>
           </div>
-          <app-button (buttonClick)="gameStore.clearStore()"/>
+          <app-button (buttonClick)="gameStore.clearStore()" text="{{'cart.clearCart' | translate | uppercase}}"/>
         </div>
         <app-separator/>
         @for(game of cartGameItems; track game.id) {

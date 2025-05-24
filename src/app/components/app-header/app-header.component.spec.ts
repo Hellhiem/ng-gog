@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AppHeaderComponent } from './app-header.component';
 
 describe('AppHeaderComponent', () => {
@@ -16,7 +15,18 @@ describe('AppHeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the header component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have isCartExpanded as false by default', () => {
+    expect(component.isCartExpanded).toBeFalse();
+  });
+
+  it('should toggle isCartExpanded when toggleCart is called', () => {
+    component.toggleCart();
+    expect(component.isCartExpanded).toBeTrue();
+    component.toggleCart();
+    expect(component.isCartExpanded).toBeFalse();
   });
 });

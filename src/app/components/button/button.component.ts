@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { UpperCasePipe } from '@angular/common';
 
@@ -10,6 +10,7 @@ import { UpperCasePipe } from '@angular/common';
 })
 export class ButtonComponent {
   @Output() buttonClick = new EventEmitter<void>();
+  @Input() text = '';
 
   onClick() {
     this.buttonClick.emit();

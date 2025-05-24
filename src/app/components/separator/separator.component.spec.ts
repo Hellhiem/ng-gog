@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SeparatorComponent } from './separator.component';
 
 describe('SeparatorComponent', () => {
@@ -8,9 +7,8 @@ describe('SeparatorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SeparatorComponent]
-    })
-    .compileComponents();
+      imports: [SeparatorComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SeparatorComponent);
     component = fixture.componentInstance;
@@ -19,5 +17,11 @@ describe('SeparatorComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render separator element', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    expect(compiled.innerHTML).toBeTruthy();
   });
 });
