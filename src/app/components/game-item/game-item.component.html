@@ -8,7 +8,7 @@
       @if(gameItem.discount) {
         <app-discount-label [discount]="gameItem.discount"/>
       }
-      <app-price-label [isOwned]="gameItem.owned"  [price]="gameItem.price" (priceClick)="addGame()" [inCart]="isGameInCart"/>
+      <app-price-label [isOwned]="gameItem.owned"  [price]="gameItem.price" (priceClick)="addGame()" [inCart]="isGameInCart" [attr.data-cy]="'game-item-price-' + gameItem.id"/>
     </div>
   </div>
 </div>

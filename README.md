@@ -1,4 +1,4 @@
-# GOG Game Store - Angular Application
+# GOG Game Store - Angular Playground
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13. 
 
@@ -21,6 +21,20 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## E2E Testing
+E2E tests are set up using [Cypress](https://www.cypress.io/). To run the E2E tests, follow these steps:
+
+1. Run the application in development mode:
+
+```bash
+ng serve
+```
+2. Open a new terminal window and run the following command to start Cypress:
+
+```bash 
+npx cypress open
+```
+3. Select `E2E Testing` from the Cypress dashboard, and then choose the `base-app-flow` tests.
 ## Scripts
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
@@ -63,3 +77,5 @@ The folder structure follows flat architecture for readability.
 - `types`: Contains TypeScript interfaces and types used throughout the application.
 - `mocks`: Contains mock data for testing and development purposes.
 - `assets`: Contains static assets like images and i18n internationalization files.
+- `root/cypress`: Contains Cypress end-to-end tests.
+- `root/husky`: Contains Husky hooks for pre-commit and pre-push checks.
