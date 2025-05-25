@@ -1,8 +1,10 @@
 @use "../../../styles" as *;
 
+$cart-width: 370px;
+
 .cart-details {
   position: relative;
-  width: 370px;
+  width: $cart-width;
   background-color: white;
 }
 
@@ -51,4 +53,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+@media (max-width: $breakpoint-small-mobile) {
+  .cart-details {
+    max-width: $cart-width;
+    width: auto;
+  }
 }

@@ -8,3 +8,9 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #DEDEDE 50%);
   padding: 0 $page-cut;
 }
+
+@media (max-width: $breakpoint-small-desktop) {
+  .app-header {
+    padding: 0 16px;
+  }
+}

@@ -25,7 +25,12 @@
   font-weight: bold;
 }
 
+.cart-item:hover .item-remove {
+  display: block;
+}
+
 .item-remove {
+  display: none;
   font-size: $c1;
   margin: 0;
   text-decoration: underline;

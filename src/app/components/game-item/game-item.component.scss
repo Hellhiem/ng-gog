@@ -3,6 +3,7 @@
 .game-item {
   width: 196px;
   background-color: #E0E0E0;
+  margin-bottom: 16px;
 }
 
 .game-name {
@@ -27,4 +28,17 @@
   justify-content: flex-end;
   gap: 4px;
   margin-top: 8px;
+}
+
+@media (max-width: $breakpoint-small-mobile) {
+  .game-item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .game-item-image {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
 }

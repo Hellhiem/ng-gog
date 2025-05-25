@@ -5,3 +5,8 @@
   margin: 0 auto;
 }
 
+@media (max-width: $breakpoint-small-desktop) {
+  .app-container {
+    max-width: none;
+  }
+}

@@ -10,3 +10,16 @@
   justify-content: space-between;
   margin-top: 16px;
 }
+
+@media (max-width: $breakpoint-small-desktop) {
+  .home-container {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: $breakpoint-small-mobile) {
+  .game-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}

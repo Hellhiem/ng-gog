@@ -1,4 +1,21 @@
+@use "../../../styles" as *;
+
 .game-of-the-week-image {
   width: 100%;
-  height: 370px;
+  height: auto;
+  max-height: 370px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .game-of-the-week-image {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .game-of-the-week-image {
+    max-height: 140px;
+  }
 }

@@ -16,6 +16,12 @@ $page-max-width: 1280px;
 $page-cut: 108px;
 $header-height: 60px;
 
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-small-desktop: 992px;
+$breakpoint-mobile: 575px;
+$breakpoint-small-mobile: 428px;
+
 // General styles
 body {
   margin:0;
