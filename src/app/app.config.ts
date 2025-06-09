@@ -6,6 +6,11 @@ import { HttpClient } from '@angular/common/http';
 import { provideHttpClient } from '@angular/common/http';
 
 import { routes } from './app.routes';
+import { provideStore } from '@ngrx/store';
+import { gamesReducer } from './store/games/games.reducer';
+import { provideStoreDevtools } from '@ngrx/store-devtools';
+import { provideEffects } from '@ngrx/effects';
+import { GamesEffects } from './store/games/games.effects';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) => new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 
@@ -21,5 +26,18 @@ export const appConfig: ApplicationConfig = {
         deps: [HttpClient],
       },
     }),
+    provideStore(),
+    provideStore({ games: gamesReducer }),
+    provideStoreDevtools({
+      maxAge: 25,
+      logOnly: false,
+      autoPause: true,
+      features: {
+        pause: false,
+        lock: true,
+        persist: true,
+      },
+    }),
+    provideEffects(GamesEffects),
   ],
 };

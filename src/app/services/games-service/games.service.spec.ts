@@ -26,23 +26,8 @@ describe('GamesService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should emit isLoading true while fetching and false after', done => {
-    const loadingStates: boolean[] = [];
-    service.subjectState$.subscribe(state => loadingStates.push(state.isLoading));
-
-    service.getGames().subscribe(games => {
-      expect(games).toEqual(mockGames);
-      expect(loadingStates).toEqual([false, true]);
-      done();
-    });
-
-    const req = httpMock.expectOne('http://localhost:3000/games');
-    expect(req.request.method).toBe('GET');
-    req.flush(mockGames);
-  });
-
   it('should fetch games from API', done => {
-    service.getGames().subscribe(games => {
+    service.fetchGames().subscribe(games => {
       expect(games).toEqual(mockGames);
       done();
     });

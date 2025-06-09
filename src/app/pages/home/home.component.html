@@ -5,17 +5,17 @@
       <app-search-input placeholder="{{'home.searchGames' | translate}}" [control]="searchedGame"/>
     </div>
   </div>
-  @if(!isLoading) {
+  @if(!isLoading()) {
     <div class="game-list">
       @for(game of filteredGameItems; track game.id) {
         <app-game-item [gameItem]="game"/>
       }
     </div>
   }
-  @if(isLoading) {
+  @if(isLoading()) {
     <app-loader />
   }
-  @if (error) {
+  @if (error()) {
     <app-error-message [errorMessage]="'general.somethingWentWrong' | translate" />
   }
 </section>
