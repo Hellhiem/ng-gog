@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "type-check": "tsc --noEmit",
     "sanity": "ng lint && npm run type-check && ng test --watch=false",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start-server": "json-server --watch db.json"
   },
   "private": true,
   "dependencies": {

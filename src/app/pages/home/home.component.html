@@ -1,8 +1,16 @@
 <section class="home-container">
  <app-game-of-the-week/>
-  <div class="game-list">
-    @for(game of gameItems; track game.id) {
-      <app-game-item [gameItem]="game"/>
-    }
-  </div>
+  @if(!isLoading) {
+    <div class="game-list">
+      @for(game of gameItems; track game.id) {
+        <app-game-item [gameItem]="game"/>
+      }
+    </div>
+  }
+  @if(isLoading) {
+    <app-loader />
+  }
+  @if (error) {
+    <app-error-message [errorMessage]="'general.somethingWentWrong' | translate" />
+  }
 </section>

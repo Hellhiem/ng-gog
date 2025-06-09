@@ -8,5 +8,8 @@
     "cartEmpty": "Your cart is empty",
     "itemsInCart": "{{number}} Items in cart",
     "clearCart": "Clear cart"
+  },
+  "general": {
+    "somethingWentWrong": "Something went wrong"
   }
 }
