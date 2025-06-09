@@ -1,8 +1,13 @@
 <section class="home-container">
  <app-game-of-the-week/>
+  <div class="search-container">
+    <div class="search-input">
+      <app-search-input placeholder="{{'home.searchGames' | translate}}" [control]="searchedGame"/>
+    </div>
+  </div>
   @if(!isLoading) {
     <div class="game-list">
-      @for(game of gameItems; track game.id) {
+      @for(game of filteredGameItems; track game.id) {
         <app-game-item [gameItem]="game"/>
       }
     </div>

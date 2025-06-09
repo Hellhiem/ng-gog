@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-error-message',
-  imports: [TranslatePipe],
+  imports: [],
   templateUrl: './error-message.component.html',
   styleUrl: './error-message.component.scss',
 })

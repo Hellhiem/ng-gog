@@ -2,7 +2,8 @@
   "home": {
     "gameOfTheWeek": "Game of the week",
     "owned": "Owned",
-    "inCart": "In cart"
+    "inCart": "In cart",
+    "searchGames": "Search games"
   },
   "cart": {
     "cartEmpty": "Your cart is empty",
